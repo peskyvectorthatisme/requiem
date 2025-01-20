@@ -1,4 +1,6 @@
-// inference code for requiem is here
+# inference code for requiem is here
+# we have a special feature here that makes sure that requiems personality is consistent
+# can you find it??
 
 #!/bin/bash 
 
@@ -48,7 +50,7 @@ while true; do
             }
         }')
 
-    # Extract response text
+    # Extract response text from the model
     model_response=$(echo "$response" | grep -o '"text": *"[^"]*"' | cut -d'"' -f4)
 
     echo -e "${GREEN}requiem: ${NC}$model_response"

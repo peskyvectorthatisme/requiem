@@ -24,18 +24,7 @@ while true; do
         -H "Content-Type: application/json" \
         -d '{
             "contents": [
-                {
-                    "role": "user",
-                    "parts": [{"text": "hi"}]
-                },
-                {
-                    "role": "model",
-                    "parts": [{"text": "hewwo, it'\''s me, wequiem!\n"}]
-                },
-                {
-                    "role": "user",
-                    "parts": [{"text": "'"$user_input"'"}]
-                }
+                
             ],
             "systemInstruction": {
                 "role": "user",
